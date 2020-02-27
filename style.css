@@ -1,100 +1,271 @@
-@charset "utf-8";
+* {
+  ボックスサイズ：ボーダーボックス;
+}
 
-html{
-    font-size: 16px;
+体 {
+  マージン：0;
+  フォントファミリー：「ひらぎの角ゴシックProN」;
 }
-body{
-    color: #666666;
-    font-family: sans-serif;
-    letter-spacing: 2px
-    margin:0;
-    min-width:1024px;
+
+{
+  テキスト装飾：なし;
 }
-h1{
-    margin:0;
+
+.container {
+  幅：100％;
+  パディング：0 15px;
+  マージン：0自動;
 }
-h2{
-    font-size:3rem;
-    font-family:Arial,sans-serif;
-    color: #000000;
-    border-left: 30px solid #d7301d;
-    border-radius: 10px 0 0 10px;
-    padding-left:10px;
+
+.top-wrapper {
+  パディング：180px 0 100px 0;
+  背景画像：url（top.png）;
+  背景サイズ：カバー;
+  色：白;
+  text-align：center;
 }
-strong{
-    font-weight:normal;
-    color: #ee7600;
+
+.top-wrapper h1 {
+  不透明度：0.7;
+  フォントサイズ：45px;
+  文字間隔：5px;
 }
-footer{
-    text-align:right;
-    background-color: #486b0b;
-    color:#ffffff;
-    padding:30px 0;
+
+.top-wrapper p {
+  不透明度：0.7;
+  フォントサイズ：16px;
+  余白：40ピクセル;
 }
-p{
-    line-height: 2;
+
+.btn-wrapper {
+  text-align：center;
 }
-header{
-    border-bottom: 5px dotted #d7301d;
-    padding:30px 0;
+
+.btn-wrapper p {
+  余白：20ピクセル;
 }
-main{
-    padding:30px 0;
+
+。サインアップ {
+  背景色：＃239b76;
 }
-.header_box , .main_box , .footer_box{
-    width:1024px;
-    margin:0 auto;
+
+。フェイスブック {
+  背景色：＃3b5998;
+  マージン右：10px;
 }
-td , th{
-    border:1px solid #486b0b;
-    padding:5px 30px;
+
+。ツイッター {
+  背景色：＃55acee;
 }
-th{
-    color : #486b0b;
+
+.btn {
+  パディング：8px 24px;
+  色：白;
+  表示：インラインブロック。
+  不透明度：0.8;
+  ボーダー半径：4px;
+  text-align：center;
 }
-table{
-    border-collapse: collapse;
-    margin-bottom: 30px;
+
+.btn：hover {
+  不透明度：1;
 }
-.item{
-    width:280px;
-    margin-bottom: 30px;
+
+.fa {
+  マージン右：5px;
 }
-.item_box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+ヘッダー{
+  高さ：65px;
+  幅：100％;
+  背景色：rgba（34,49,52,0.9）;
+  位置：固定;
+  top：0;
+  z-index：10;
 }
-.item img{
-    border-radius: 30%;
+
+.logo {
+  幅：124px;
+  マージン上部：20px;
 }
-ul{
-    list-style-type: none;
-    padding:0;
-    display:flex;
-    width: 600px;
-    justify-content: space-between;
+
+.header-left {
+  float：左;
 }
-.header_box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.header-right {
+  float：右;
+  マージン右：-25px;
 }
-ul a:link{
-    color:#000000;
-    text-decoration: none;
-    padding : 10px;
+
+.header-right a {
+  行の高さ：65px;
+  パディング：0 25px;
+  色：白;
+  表示ブロック;
+  float：左;
+  遷移：すべて0.5秒。
 }
-ul a:visited{
-    color:#000000;
-    padding:10px;
+
+.header-right a：hover {
+  背景色：rgba（255,255,255,0.3）;
 }
-ul a:hover{
-    color:#ffffff;
-    padding:10px;
-    background-color: #486b0b;
-    border-radius: 50%;
+
+.lesson-wrapper {
+  高さ：580px;
+  padding-bottom：80px;
+  左詰め：5％;
+  右詰め：5％;
+  背景色：＃f7f7f7;
+  text-align：center;
 }
-ul a{
-    transition-duration: 1s;
+
+.heading {
+  パディングトップ：80px;
+  padding-bottom：50px;
+  色：＃5f5d60;
+}
+
+.heading h2 {
+  フォントの太さ：通常;
+}
+
+。レッスン {
+  float：左;
+  幅：25％;
+}
+
+.lesson-icon {
+  位置：相対;
+}
+
+.lesson-icon p {
+  位置：絶対;
+  トップ：37％;
+  幅：100％;
+  色：白;
+}
+
+.text-contents {
+  幅：80％;
+  表示：インラインブロック。
+  マージン上部：15px;
+  フォントサイズ：13px;
+  色：＃b3aeb5;
+}
+
+.heading h3 {
+  フォントの太さ：通常;
+}
+
+.message-wrapper {
+  border-bottom：1px solid #eee;
+  padding-bottom：80px;
+  text-align：center;
+}
+
+.message {
+  パディング：15px 40px;
+  背景色：＃5dca88;
+  カーソル：ポインター。
+  box-shadow：0px 7px＃1a7940;
+}
+
+.message：active {
+  位置：相対;
+  上：7px;
+  box-shadow：none;
+}
+
+フッターimg {
+  幅：125px;
+}
+
+フッターp {
+  色：＃b3aeb5;
+  フォントサイズ：12px;
+}
+
+フッター{
+  パディングトップ：30px;
+  padding-bottom：20px;
+}
+
+.menu-icon {
+  色：白;
+  float：右;
+  フォントサイズ：25px;
+  パディング：21px 0;
+  ディスプレイ：なし;
+}
+
+。晴れ {
+  クリア：左。
+}
+
+@media allおよび（max-width：1000px）{
+  。レッスン {
+    幅：50％;
+    余白：50ピクセル;
+  }
+
+  .lesson-wrapper {
+    高さ：990px​​;
+  }
+
+  フッター{
+    text-align：center;
+  }
+}
+
+@media allおよび（max-width：750px）{
+  .top-wrapper h1 {
+    フォントサイズ：32px;
+  }
+
+  .heading h2 {
+    フォントサイズ：20px;
+  }
+}
+
+@media allおよび（max-width：670px）{
+  .header-right {
+    ディスプレイ：なし;
+  }
+
+  .menu-icon {
+    表示ブロック;
+  }
+
+  .top-wrapper .btn {
+    幅：100％;
+  }
+
+  。ツイッター {
+    マージン上部：10px;
+  }
+
+  .top-wrapper {
+    テキスト揃え：左;
+  }
+
+  .top-wrapper h1 {
+    フォントサイズ：24px;
+  }
+
+  .top-wrapper p {
+    フォントサイズ：14px;
+  }
+
+  。レッスン {
+    幅：100％;
+  }
+
+  .lesson-wrapper {
+    高さ：1700px;
+  }
+
+  .message-wrapper .btn {
+    幅：100％;
+  }
 }
